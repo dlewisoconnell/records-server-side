@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API Example</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Records</h1>
+  <table id="records-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Artist</th>
+        <th>Release Year</th>
+      </tr>
+    </thead>
+    <tbody id="records-body"></tbody>
+  </table>
+
+  <script>
+    // Fetch data from the API
+    fetch('http://localhost:3000/api/records')
+      .then(response => response.json())
+      .then(data => {
+        // Update the UI with the retrieved data
+        const recordsBody = document.getElementById('records-body');
+        data.forEach(record => {
+          const row = document.createElement('tr');
+          const nameCell = document.createElement('td');
+          const artistCell = document.createElement('td');
+          const yearCell = document.createElement('td');
+
+          nameCell.textContent = record.name;
+          artistCell.textContent = record.artist;
+          yearCell.textContent = record.releaseYear;
+
+          row.appendChild(nameCell);
+          row.appendChild(artistCell);
+          row.appendChild(yearCell);
+
+          recordsBody.appendChild(row);
+        });
+      })
+      .catch(error => console.error(error));
+  </script>
+</body>
+</html>
