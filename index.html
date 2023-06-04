@@ -1,62 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>API Example</title>
-  <style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    th, td {
-      padding: 8px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-    }
-
-    th {
-      background-color: #f2f2f2;
-    }
-  </style>
+  <title>Danny's Record Collection</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <h1>Records</h1>
+  <h1>Danny's Record Collection</h1>
+  <h2>Records</h2>
+  
+  <div class="btn-container">
+    <button id="prevBtn" disabled>Previous</button>
+    <button id="nextBtn">Next</button>
+  </div>
+
   <table id="records-table">
     <thead>
       <tr>
-        <th>Name</th>
-        <th>Artist</th>
-        <th>Release Year</th>
+        <th id="title-header">Title</th>
+        <th id="artist-header">Artist</th>
+        <th id="release-year-header">Release Year</th>
+        <th id="format-header">Format</th>
       </tr>
     </thead>
     <tbody id="records-body"></tbody>
   </table>
 
-  <script>
-    // Fetch data from the API
-    fetch('http://localhost:3000/api/records')
-      .then(response => response.json())
-      .then(data => {
-        // Update the UI with the retrieved data
-        const recordsBody = document.getElementById('records-body');
-        data.forEach(record => {
-          const row = document.createElement('tr');
-          const nameCell = document.createElement('td');
-          const artistCell = document.createElement('td');
-          const yearCell = document.createElement('td');
+  <h2>Statistics</h2>
 
-          nameCell.textContent = record.name;
-          artistCell.textContent = record.artist;
-          yearCell.textContent = record.releaseYear;
+  <h3><div id="total-records"></div></h3>
 
-          row.appendChild(nameCell);
-          row.appendChild(artistCell);
-          row.appendChild(yearCell);
 
-          recordsBody.appendChild(row);
-        });
-      })
-      .catch(error => console.error(error));
-  </script>
+  <h3>Records By Year</h3>
+  <canvas id="myChart"></canvas>
+
+  <h3>Most Frequent Artists</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Artist</th>
+        <th>Number of Records</th>
+      </tr>
+    </thead>
+    <tbody id="artists-body">
+    </tbody>
+  </table>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="scripts.js"></script>
+
 </body>
 </html>

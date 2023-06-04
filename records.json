@@ -1,9 +1,1398 @@
 [{
-  "name": "Bruised Orange",
-  "artist": "John Prine",
-  "releaseYear": 1978
-},{
-  "name": "Sweet Revenge",
-  "artist": "John Prine",
-  "releaseYear": 1973
-}]
+    "title": "Answer That and Stay Fashionable",
+    "artist": "AFI",
+    "releaseYear": 1997,
+    "format": "LP"
+  },{
+    "title": "The Psychedelic Sounds of",
+    "artist": "13th Floor Elevators",
+    "releaseYear": 1966,
+    "format": "LP"
+  },{
+    "title": "Sing The Sorrow",
+    "artist": "AFI",
+    "releaseYear": 2003,
+    "format": "LP"
+  },{
+    "title": "As The Eternal Cowboy",
+    "artist": "Against Me!",
+    "releaseYear": 2003,
+    "format": "LP"
+  },{
+    "title": "Heavy Window",
+    "artist": "Apache Dropout",
+    "releaseYear": 2014,
+    "format": "LP"
+  },{
+    "title": "Magnetic Heads",
+    "artist": "Apache Dropout",
+    "releaseYear": 2013,
+    "format": "LP"
+  },{
+    "title": "Gold",
+    "artist": "Anwar Sadat",
+    "releaseYear": 2013,
+    "format": "LP"
+  },{
+    "title": "Wild Planet",
+    "artist": "The B-52's",
+    "releaseYear": 1980,
+    "format": "LP"
+  },{
+    "title": "Whammy!",
+    "artist": "The B-52's",
+    "releaseYear": 1983,
+    "format": "LP"
+  },{
+    "title": "Bad Brains",
+    "artist": "Bad Brains",
+    "releaseYear": 1982,
+    "format": "LP"
+  },{
+    "title": "Dead Loop",
+    "artist": "Tim Barnes",
+    "releaseYear": 2020,
+    "format": "LP"
+  },{
+    "title": "Pet Sounds",
+    "artist": "Beach Boys",
+    "releaseYear": 1966,
+    "format": "LP"
+  },{
+    "title": "The Smile Sessions",
+    "artist": "Beach Boys",
+    "releaseYear": 2011,
+    "format": "LP"
+  },{
+    "title": "Fade Away",
+    "artist": "Best Coast",
+    "releaseYear": 2013,
+    "format": "LP"
+  },{
+    "title": "Chuck Berry's Golden Hits",
+    "artist": "Chuck Berry",
+    "releaseYear": 1967,
+    "format": "LP"
+  },{
+    "title": "Headache",
+    "artist": "Big Black",
+    "releaseYear": 1989,
+    "format": "LP"
+  },{
+    "title": "Songs About...",
+    "artist": "Big Black",
+    "releaseYear": 1987,
+    "format": "LP"
+  },{
+    "title": "Hard Life",
+    "artist": "Big Eyes",
+    "releaseYear": 2011,
+    "format": "LP"
+  }, {
+    "title": "Number 1 Record",
+    "artist": "Big Star",
+    "releaseYear": 1972,
+    "format": "LP"
+  },{
+    "title": "Art Offensive",
+    "artist": "Black Cross",
+    "releaseYear": 2003,
+    "format": "LP"
+  },{
+    "title": "Severance Pays",
+    "artist": "Black Cross",
+    "releaseYear": 2007,
+    "format": "LP"
+  },{
+    "title": "The First Four Years",
+    "artist": "Black Flag",
+    "releaseYear": 1983,
+    "format": "LP"
+  },{
+    "title": "My War",
+    "artist": "Black Flag",
+    "releaseYear": 1984,
+    "format": "LP"
+  },{
+    "title": "Paranoid",
+    "artist": "Black Sabbath",
+    "releaseYear": 1970,
+    "format": "LP"
+  },{
+    "title": "Master of Reality",
+    "artist": "Black Sabbath",
+    "releaseYear": 1971,
+    "format": "LP"
+  },{
+    "title": "Vol 4",
+    "artist": "Black Sabbath",
+    "releaseYear": 1972,
+    "format": "LP"
+  },{
+    "title": "Sabbath Bloody Sabbath",
+    "artist": "Black Sabbath",
+    "releaseYear": 1973,
+    "format": "LP"
+  },{
+    "title": "Split",
+    "artist": "Blatz/Filth",
+    "releaseYear": 1991,
+    "format": "LP"
+  },{
+    "title": "In My House",
+    "artist": "David Bromberg",
+    "releaseYear": 1978,
+    "format": "LP"
+  },{
+    "title": "Bugg",
+    "artist": "Bugg",
+    "releaseYear": 2017,
+    "format": "LP"
+  },{
+    "title": "Sweetheart of the Rodeo",
+    "artist": "The Byrds",
+    "releaseYear": 1968,
+    "format": "LP"
+  },
+  {
+    "title": "(Untitled)",
+    "artist": "The Byrds",
+    "releaseYear": 1970,
+    "format": "LP"
+  },{
+    "title": "Candy-O",
+    "artist": "The Cars",
+    "releaseYear": 1979,
+    "format": "LP"
+  },{
+    "title": "Rohnert Park",
+    "artist": "Ceremony",
+    "releaseYear": 2010,
+    "format": "LP"
+  },{
+    "title": "Zoo",
+    "artist": "Ceremony",
+    "releaseYear": 2012,
+    "format": "LP"
+  },{
+    "title": "Tequila",
+    "artist": "The Champs",
+    "releaseYear": 1957,
+    "format": "LP"
+  },{
+    "title": "Dream Police",
+    "artist": "Cheap Trick",
+    "releaseYear": 1979,
+    "format": "LP"
+  },{
+    "title": "Group Sex",
+    "artist": "Circle Jerks",
+    "releaseYear": 1980,
+    "format": "LP"
+  },{
+    "title": "Combat Rock",
+    "artist": "The Clash",
+    "releaseYear": 1982,
+    "format": "LP"
+  },{
+    "title": "The Harder They Come",
+    "artist": "Jimmy Cliff",
+    "releaseYear": 1972,
+    "format": "LP"
+  },{
+    "title": "The Patsy Cline Story",
+    "artist": "Patsy Cline",
+    "releaseYear": 1980,
+    "format": "LP"
+  },{
+    "title": "Goddamage",
+    "artist": "Coliseum",
+    "releaseYear": 2005,
+    "format": "LP"
+  },{
+    "title": "My Aim is True",
+    "artist": "Elvis Costello",
+    "releaseYear": 1977,
+    "format": "LP"
+  },{
+    "title": "Fresh Cream",
+    "artist": "Cream",
+    "releaseYear": 1966,
+    "format": "LP"
+  },{
+    "title": "More Creedence Gold",
+    "artist": "Creedence Clearwater Revival",
+    "releaseYear": 1973,
+    "format": "LP"
+  },{
+    "title": "Green River",
+    "artist": "Creedence Clearwater Revival",
+    "releaseYear": 1969,
+    "format": "LP"
+  },{
+    "title": "Life and Times",
+    "artist": "Jim Croce",
+    "releaseYear": 1973,
+    "format": "LP"
+  },{
+    "title": "The Faces I've Been",
+    "artist": "Jim Croce",
+    "releaseYear": 1975,
+    "format": "LP"
+  },{
+    "title": "You Don't Mess Around With Jim",
+    "artist": "Jim Croce",
+    "releaseYear": 1972,
+    "format": "LP"
+  },{
+    "title": "Goes Digital",
+    "artist": "Carlo Curley",
+    "releaseYear": 1979,
+    "format": "LP"
+  },{
+    "title": "Crack In The System",
+    "artist": "Dead Moon",
+    "releaseYear": 1994,
+    "format": "LP"
+  },{
+    "title": "In The Graveyard",
+    "artist": "Dead Moon",
+    "releaseYear": 1988,
+    "format": "LP"
+  },{
+    "title": "Spiritual, Mental, Physical",
+    "artist": "Death",
+    "releaseYear": 2011,
+    "format": "LP"
+  },{
+    "title": "Milo Goes To College",
+    "artist": "Descendents",
+    "releaseYear": 1982,
+    "format": "LP"
+  },{
+    "title": "Everything Sucks",
+    "artist": "Descendents",
+    "releaseYear": 1996,
+    "format": "LP"
+  },{
+    "title": "4 of a Kind",
+    "artist": "DRI",
+    "releaseYear": 1988,
+    "format": "LP"
+  },{
+    "title": "Dealing With It",
+    "artist": "DRI",
+    "releaseYear": 1985,
+    "format": "LP"
+  },{
+    "title": "Eclipse",
+    "artist": "Desctruction Unit",
+    "releaseYear": 2010,
+    "format": "LP"
+  },{
+    "title": "Freedom of Choice",
+    "artist": "Devo",
+    "releaseYear": 1980,
+    "format": "LP"
+  },{
+    "title": "Q: Are We Not Men? We Are Devo",
+    "artist": "Devo",
+    "releaseYear": 1978,
+    "format": "LP"
+  },{
+    "title": "New Traditionalists",
+    "artist": "Devo",
+    "releaseYear": 1981,
+    "format": "LP"
+  },{
+    "title": "Dev-o Live",
+    "artist": "Devo",
+    "releaseYear": 1981,
+    "format": "LP"
+  },{
+    "title": "Dinosaur",
+    "artist": "Dinosaur Jr",
+    "releaseYear": 1985,
+    "format": "LP"
+  },{
+    "title": "Green Mind",
+    "artist": "Dinosaur Jr",
+    "releaseYear": 1991,
+    "format": "LP"
+  },{
+    "title": "Farm",
+    "artist": "Dinosaur Jr",
+    "releaseYear": 2009,
+    "format": "LP"
+  },{
+    "title": "Discovery",
+    "artist": "ELO",
+    "releaseYear": 1979,
+    "format": "LP"
+  },{
+    "title": "New Forms",
+    "artist": "Elsinores",
+    "releaseYear": 2015,
+    "format": "LP"
+  },{
+    "title": "Dreams of Youth",
+    "artist": "Elsinores",
+    "releaseYear": 2014,
+    "format": "LP"
+  },{
+    "title": "In A Time Of Hate",
+    "artist": "Endpoint",
+    "releaseYear": 1990,
+    "format": "LP"
+  },{
+    "title": "Fleetwood Mac",
+    "artist": "Fleetwood Mac",
+    "releaseYear": 1975,
+    "format": "LP"
+  },{
+    "title": "Rumors",
+    "artist": "Fleetwood Mac",
+    "releaseYear": 1977,
+    "format": "LP"
+  },{
+    "title": "Tusk",
+    "artist": "Fleetwood Mac",
+    "releaseYear": 1979,
+    "format": "LP"
+  },{
+    "title": "Mirage",
+    "artist": "Fleetwood Mac",
+    "releaseYear": 1982,
+    "format": "LP"
+    },{
+      "title": "Foo Fighters",
+      "artist": "Foo Fighters",
+      "releaseYear": 1995,
+      "format": "LP"
+    },{
+      "title": "The Guilded Palace of Sin",
+      "artist": "Flying Burrito Brothers",
+      "releaseYear": 1969,
+      "format": "LP"
+    },{
+      "title": "There's Nothing Left To Lose",
+      "artist": "Foo Fighters",
+      "releaseYear": 1999,
+      "format": "LP"
+    },{
+      "title": "Freakwater",
+      "artist": "Freakwater",
+      "releaseYear": 1989,
+      "format": "LP"
+    },{
+      "title": "In on the Kill Taker",
+      "artist": "Fugazi",
+      "releaseYear": 1993,
+      "format": "LP"
+    },{
+      "title": "Fugazi",
+      "artist": "Fugazi",
+      "releaseYear": 1989,
+      "format": "LP"
+    },{
+      "title": "Leave Your Mind At Home",
+      "artist": "The Fuzztones",
+      "releaseYear": 1984,
+      "format": "LP"
+    },{
+      "title": "Beauty and the Beat",
+      "artist": "The Go-Go's",
+      "releaseYear": 1981,
+      "format": "LP"
+    },{
+      "title": "Affordable Art",
+      "artist": "Steve Goodman",
+      "releaseYear": 1984,
+      "format": "LP"
+    },{
+      "title": "Grateful Dead",
+      "artist": "Live/Dead",
+      "releaseYear": 1969,
+      "format": "LP"
+    },{
+      "title": "Good Shade",
+      "artist": "Good Shade",
+      "releaseYear": 2014,
+      "format": "LP"
+    },{
+      "title": "I Want To Grow Up",
+      "artist": "Colleen Green",
+      "releaseYear": 2015,
+      "format": "LP"
+    },{
+      "title": "Dookie",
+      "artist": "Green Day",
+      "releaseYear": 1994,
+      "format": "LP"
+    },{
+      "title": "Kerplunk!",
+      "artist": "Green Day",
+      "releaseYear": 1991,
+      "format": "LP"
+    },{
+      "title": "Nimrod",
+      "artist": "Green Day",
+      "releaseYear": 1997,
+      "format": "LP"
+    },{
+      "title": "WFMU, New Jersey, May 28th 1992",
+      "artist": "Green Day",
+      "releaseYear": 2015,
+      "format": "LP"
+    },{
+      "title": "Possession Sound",
+      "artist": "Gun Outfit",
+      "releaseYear": 2010,
+      "format": "LP"
+    },{
+      "title": "Reanimation Festival",
+      "artist": "Groovie Ghoulies",
+      "releaseYear": 1997,
+      "format": "LP"
+    },{
+      "title": "Evangeline",
+      "artist": "Emmylou Harris",
+      "releaseYear": 1981,
+      "format": "LP"
+    },{
+      "title": "Cloud Nine",
+      "artist": "George Harrison",
+      "releaseYear": 1987,
+      "format": "LP"
+    },{
+      "title": "You Are Always On Our Minds",
+      "artist": "The Hand To Hand Band",
+      "releaseYear": 2012,
+      "format": "LP"
+    },{
+      "title": "Head Hunters",
+      "artist": "Herbie Hancock",
+      "releaseYear": 1973,
+      "format": "LP"
+    },{
+      "title": "Hank Wood And The Hammerheads",
+      "artist": "Hank Wood And The Hammerheads",
+      "releaseYear": 2018,
+      "format": "LP"
+    },{
+      "title": "Various States Of Disrepair",
+      "artist": "Hickey",
+      "releaseYear": 2012,
+      "format": "LP"
+    },{
+      "title": "Extremities, Dirt and Various Repressed Emotions",
+      "artist": "Killing Joke",
+      "releaseYear": 1990,
+      "format": "LP"
+    },{
+      "title": "A Rock & Roll Collection",
+      "artist": "Buddy Holly",
+      "releaseYear": 1977,
+      "format": "LP"
+    },{
+      "title": "Happy Damage",
+      "artist": "Jacuzzi Boys",
+      "releaseYear": 2016,
+      "format": "LP"
+    },{
+      "title": "Waves",
+      "artist": "Jade Warriors",
+      "releaseYear": 1975,
+      "format": "LP"
+    },{
+      "title": "Zone",
+      "artist": "Jeff The Brotherhood",
+      "releaseYear": 2016,
+      "format": "LP"
+    },{
+      "title": "Why Not Me",
+      "artist": "The Judds",
+      "releaseYear": 1984,
+      "format": "LP"
+    },{
+      "title": "Kinghorse",
+      "artist": "Kinghorse",
+      "releaseYear": 1991,
+      "format": "LP"
+    },{
+      "title": "Lifers",
+      "artist": "Landlord",
+      "releaseYear": 2008,
+      "format": "LP"
+    },{
+      "title": "Wake Up, Music",
+      "artist": "Jellyroll Rockheads",
+      "releaseYear": 2003,
+      "format": "LP"
+    },{
+      "title": "King Missile",
+      "artist": "King Millile",
+      "releaseYear": 1994,
+      "format": "LP"
+    },{
+      "title": "She's So Unusual",
+      "artist": "Cindy Lauper",
+      "releaseYear": 1983,
+      "format": "LP"
+    },{
+      "title": "Blue Kentucky Girl",
+      "artist": "Loretta Lynn",
+      "releaseYear": 1965,
+      "format": "LP"
+    },{
+      "title": "All My Best",
+      "artist": "Loretta Lynn",
+      "releaseYear": 1978,
+      "format": "LP"
+    },{
+      "title": "Kick Out The Jams",
+      "artist": "MC5",
+      "releaseYear": 1969,
+      "format": "LP"
+    },{
+      "title": "Back In The USA",
+      "artist": "MC5",
+      "releaseYear": 1970,
+      "format": "LP"
+    },{
+      "title": "II",
+      "artist": "Meat Puppets",
+      "releaseYear": 1984,
+      "format": "LP"
+    },{
+      "title": "Ruin Johnny's Bar Mitzva",
+      "artist": "Me First And The Gimme Gimmes",
+      "releaseYear": 2004,
+      "format": "LP"
+    },{
+      "title": "Open Your Heart",
+      "artist": "The Men",
+      "releaseYear": 2012,
+      "format": "LP"
+    },{
+      "title": "Leave Home",
+      "artist": "The Men",
+      "releaseYear": 2011,
+      "format": "LP"
+    },{
+      "title": "Tomorrow's Hits",
+      "artist": "The Men",
+      "releaseYear": 2014,
+      "format": "LP"
+    },{
+      "title": "Special Herbs Vol 2",
+      "artist": "MF Doom",
+      "releaseYear": 2002,
+      "format": "LP"
+    },{
+      "title": "Satanic Royalty",
+      "artist": "Midnight",
+      "releaseYear": 2011,
+      "format": "LP"
+    },{
+      "title": "Oh Yeah",
+      "artist": "Charles Mingus",
+      "releaseYear": 1962,
+      "format": "LP"
+    },{
+      "title": "Roger Miller",
+      "artist": "Roger Miller",
+      "releaseYear": 1970,
+      "format": "LP"
+    },{
+      "title": "Mystic 100s",
+      "artist": "Milk Music",
+      "releaseYear": 2017,
+      "format": "LP"
+    },{
+      "title": "Split",
+      "artist": "Milk Music/Destruction Unit/Merchandise",
+      "releaseYear": 2013,
+      "format": "LP"
+    },{
+      "title": "On A Micro Diet",
+      "artist": "Milk Music",
+      "releaseYear": 2023,
+      "format": "LP"
+    },{
+      "title": "Minor Threat",
+      "artist": "Minor Threat",
+      "releaseYear": 1984,
+      "format": "LP"
+    },{
+      "title": "Double Nickles On The Dime",
+      "artist": "Minutemen",
+      "releaseYear": 1984,
+      "format": "LP"
+    },{
+      "title": "Moondance",
+      "artist": "Van Morrison",
+      "releaseYear": 1970,
+      "format": "LP"
+    },{
+      "title": "Tupelo Honey",
+      "artist": "Van Morrison",
+      "releaseYear": 1971,
+      "format": "LP"
+    },{
+      "title": "The Modern Lovers",
+      "artist": "The Modern Lovers",
+      "releaseYear": 1976,
+      "format": "LP"
+    },{
+      "title": "Nilsson Schmilsson",
+      "artist": "Harry Nilsson",
+      "releaseYear": 1971,
+      "format": "LP"
+    },{
+      "title": "Illmatic",
+      "artist": "Nas",
+      "releaseYear": 1994,
+      "format": "LP"
+    },{
+      "title": "Pussy Cats",
+      "artist": "Harry Nilsson",
+      "releaseYear": 1974,
+      "format": "LP"
+    },{
+      "title": "A Little Touch Of Schmilsson In The Night",
+      "artist": "Harry Nilsson",
+      "releaseYear": 1973,
+      "format": "LP"
+    },{
+      "title": "Son Of Schmilsson",
+      "artist": "Harry Nilsson",
+      "releaseYear": 1972,
+      "format": "LP"
+    },{
+      "title": "Knnillssonn",
+      "artist": "Harry Nilsson",
+      "releaseYear": 1977,
+      "format": "LP"
+    },{
+      "title": "Popeye",
+      "artist": "Harry Nilsson",
+      "releaseYear": 1980,
+      "format": "LP"
+    },{
+      "title": "Sandman",
+      "artist": "Harry Nilsson",
+      "releaseYear": 1976,
+      "format": "LP"
+    },{
+      "title": "...That's The Way It Is",
+      "artist": "Harry Nilsson",
+      "releaseYear": 1976,
+      "format": "LP"
+    },{
+      "title": "Early Times",
+      "artist": "Harry Nilsson",
+      "releaseYear": 1977,
+      "format": "LP"
+    },{
+      "title": "Sessions 1967-1975 Rarities",
+      "artist": "Harry Nilsson",
+      "releaseYear": 2017,
+      "format": "LP"
+    },{
+      "title": "Rock 'N' Roll",
+      "artist": "Harry Nilsson",
+      "releaseYear": 1969,
+      "format": "LP"
+    },{
+      "title": "Bleach",
+      "artist": "Nirvana",
+      "releaseYear": 1989,
+      "format": "LP"
+    },{
+      "title": "Live In Buenos Aires 1992",
+      "artist": "Nirvana",
+      "releaseYear": 2014,
+      "format": "LP"
+    },{
+      "title": "Love Super Terranean",
+      "artist": "Shutaro Noguchi",
+      "releaseYear": 2018,
+      "format": "LP"
+    },{
+      "title": "Misunderstanding Human Behavior",
+      "artist": "Old Baby",
+      "releaseYear": 2012,
+      "format": "LP"
+    },{
+      "title": "Mystery Girl",
+      "artist": "Roy Orbison",
+      "releaseYear": 1989,
+      "format": "LP"
+    },{
+      "title": "Pampers",
+      "artist": "Pampers",
+      "releaseYear": 2013,
+      "format": "LP"
+    },{
+      "title": "Slanted And Enchanted",
+      "artist": "Pavement",
+      "releaseYear": 1992,
+      "format": "LP"
+    },{
+      "title": "Vitology",
+      "artist": "Pearl Jam",
+      "releaseYear": 1994,
+      "format": "LP"
+    },{
+      "title": "Vs.",
+      "artist": "Pearl Jam",
+      "releaseYear": 1993,
+      "format": "LP"
+    },{
+      "title": "Tom Petty And The Heartbreakers",
+      "artist": "Tom Petty And The Heartbreakers",
+      "releaseYear": 1976,
+      "format": "LP"
+    },{
+      "title": "Damn The Torpedoes",
+      "artist": "Tom Petty And The Heartbreakers",
+      "releaseYear": 1979,
+      "format": "LP"
+    },{
+      "title": "Hard Promises",
+      "artist": "Tom Petty And The Heartbreakers",
+      "releaseYear": 1981,
+      "format": "LP"
+    },{
+      "title": "Long After Dark",
+      "artist": "Tom Petty And The Heartbreakers",
+      "releaseYear": 1982,
+      "format": "LP"
+    },{
+      "title": "Pack Up The Plantation: Live!",
+      "artist": "Tom Petty And The Heartbreakers",
+      "releaseYear": 1985,
+      "format": "LP"
+    },{
+      "title": "Hypnotic Eye",
+      "artist": "Tom Petty And The Heartbreakers",
+      "releaseYear": 2014,
+      "format": "LP"
+    },{
+      "title": "Double Hell",
+      "artist": "Phasm",
+      "releaseYear": 2020,
+      "format": "LP"
+    },{
+      "title": "Shallow",
+      "artist": "Pissed Jeans",
+      "releaseYear": 2005,
+      "format": "LP"
+    },{
+      "title": "Bossanova",
+      "artist": "Pixies",
+      "releaseYear": 1990,
+      "format": "LP"
+    },{
+      "title": "Pixies",
+      "artist": "Trompe Le Monde",
+      "releaseYear": 1991,
+      "format": "LP"
+    },{
+      "title": "Outlandos d'Amour",
+      "artist": "Police",
+      "releaseYear": 1978,
+      "format": "LP"
+    },{
+      "title": "Zenyatta Mondatta",
+      "artist": "Police",
+      "releaseYear": 1980,
+      "format": "LP"
+    },{
+      "title": "The Idiot",
+      "artist": "Iggy Pop",
+      "releaseYear": 1977,
+      "format": "LP"
+    },{
+      "title": "Lust For Life",
+      "artist": "Iggy Pop",
+      "releaseYear": 1977,
+      "format": "LP"
+    },{
+      "title": "Pretenders",
+      "artist": "Pretenders",
+      "releaseYear": 1979,
+      "format": "LP"
+    },{
+      "title": "Alone",
+      "artist": "Pretenders",
+      "releaseYear": 2016,
+      "format": "LP"
+    },{
+      "title": "In Spite Of Ourselves",
+      "artist": "John Prine",
+      "releaseYear": 1999,
+      "format": "LP"
+    },{
+      "title": "Live",
+      "artist": "John Prine",
+      "releaseYear": 1988,
+      "format": "LP"
+    },{
+      "title": "Sweet Revenge",
+      "artist": "John Prine",
+      "releaseYear": 1973,
+      "format": "LP"
+    },{
+      "title": "John Prine",
+      "artist": "John Prine",
+      "releaseYear": 1971,
+      "format": "LP"
+    },{
+      "title": "Diamonds In The Rough",
+      "artist": "John Prine",
+      "releaseYear": 1972,
+      "format": "LP"
+    },{
+      "title": "Pink Cadillac",
+      "artist": "John Prine",
+      "releaseYear": 1979,
+      "format": "LP"
+    },{
+      "title": "German Afternoons",
+      "artist": "John Prine",
+      "releaseYear": 1986,
+      "format": "LP"
+    },{
+      "title": "Common Sense",
+      "artist": "John Prine",
+      "releaseYear": 1975,
+      "format": "LP"
+    },{
+      "title": "Bruised Orange",
+      "artist": "John Prine",
+      "releaseYear": 1978,
+      "format": "LP"
+    },{
+      "title": "Aimless Love",
+      "artist": "John Prine",
+      "releaseYear": 1984,
+      "format": "LP"
+    },{
+      "title": "Storm Windows",
+      "artist": "John Prine",
+      "releaseYear": 1980,
+      "format": "LP"
+    },{
+      "title": "Prime Prine: The Best Of John Prine",
+      "artist": "John Prine",
+      "releaseYear": 1976,
+      "format": "LP"
+    },{
+      "title": "Water On Mars",
+      "artist": "Purling Hiss",
+      "releaseYear": 2013,
+      "format": "LP"
+    },{
+      "title": "Weirdon",
+      "artist": "Purling Hiss",
+      "releaseYear": 2014,
+      "format": "LP"
+    },{
+      "title": "All Hail The Queen",
+      "artist": "Queen Latifa",
+      "releaseYear": 1989,
+      "format": "LP"
+    },{
+      "title": "Ramones Mania",
+      "artist": "Ramones",
+      "releaseYear": 1988,
+      "format": "LP"
+    },{
+      "title": "Ramones",
+      "artist": "Ramones",
+      "releaseYear": 1976,
+      "format": "LP"
+    },{
+      "title": "Rocket To Russia",
+      "artist": "Ramones",
+      "releaseYear": 1977,
+      "format": "LP"
+    },{
+      "title": "End Of The Century",
+      "artist": "Ramones",
+      "releaseYear": 1980,
+      "format": "LP"
+    },{
+      "title": "Murmur",
+      "artist": "R.E.M.",
+      "releaseYear": 1983,
+      "format": "LP"
+    },{
+      "title": "Document",
+      "artist": "R.E.M.",
+      "releaseYear": 1987,
+      "format": "LP"
+    },{
+      "title": "Reckoning",
+      "artist": "R.E.M.",
+      "releaseYear": 1984,
+      "format": "LP"
+    },{
+      "title": "9 Dead Alive",
+      "artist": "Rodrigo y Gabriela",
+      "releaseYear": 2014,
+      "format": "LP"
+    },{
+      "title": "Some Girls",
+      "artist": "Rolling Stones",
+      "releaseYear": 1978,
+      "format": "LP"
+    },{
+      "title": "Mortise And Tenon",
+      "artist": "Sapat",
+      "releaseYear": 2007,
+      "format": "LP"
+    },{
+      "title": "The Freed Man",
+      "artist": "Sebadoh",
+      "releaseYear": 1989,
+      "format": "LP"
+    },{
+      "title": "The World Of Pete Seeger",
+      "artist": "Pete Seeger",
+      "releaseYear": 1972,
+      "format": "LP"
+    },{
+      "title": "Gemini",
+      "artist": "Ty Segall",
+      "releaseYear": 2013,
+      "format": "LP"
+    },{
+      "title": "Dear You",
+      "artist": "Jawbreaker",
+      "releaseYear": 1995,
+      "format": "LP"
+    },{
+      "title": "Blood Visions",
+      "artist": "Jay Reatard",
+      "releaseYear": 2006,
+      "format": "LP"
+    },{
+      "title": "Stranger In Town",
+      "artist": "Bob Seger",
+      "releaseYear": 1978,
+      "format": "LP"
+    },{
+      "title": "Night Moves",
+      "artist": "Bob Seger",
+      "releaseYear": 1976,
+      "format": "LP"
+    },{
+      "title": "At Action Park",
+      "artist": "Shellac",
+      "releaseYear": 1994,
+      "format": "LP"
+    },{
+      "title": "Shonen Knife",
+      "artist": "Shonen Knife",
+      "releaseYear": 1990,
+      "format": "LP"
+    },{
+      "title": "Graceland",
+      "artist": "Paul Simon",
+      "releaseYear": 1986,
+      "format": "LP"
+    },{
+      "title": "Still Crazy After All These Years",
+      "artist": "Paul Simon",
+      "releaseYear": 1975,
+      "format": "LP"
+    },{
+      "title": "Metamodern Sounds In Country Music",
+      "artist": "Sturgill Simpson",
+      "releaseYear": 2014,
+      "format": "LP"
+    },{
+      "title": "Cuttin' Grass Vol 1",
+      "artist": "Sturgill Simpson",
+      "releaseYear": 2020,
+      "format": "LP"
+    },{
+      "title": "Dopesmoker",
+      "artist": "Sleep",
+      "releaseYear": 2003,
+      "format": "LP"
+    },{
+      "title": "Gifts Of Conciousness",
+      "artist": "Sorespot",
+      "releaseYear": 2020,
+      "format": "LP"
+    },{
+      "title": "Like The River Loves The Sea",
+      "artist": "Joan Shelley",
+      "releaseYear": 2019,
+      "format": "LP"
+    },{
+      "title": "A Thousand Leaves",
+      "artist": "Sonic Youth",
+      "releaseYear": 1998,
+      "format": "LP"
+    },{
+      "title": "The Smith Westerns",
+      "artist": "The Smith Westerns",
+      "releaseYear": 2009,
+      "format": "LP"
+    },{
+      "title": "Horses",
+      "artist": "Patty Smith",
+      "releaseYear": 1975,
+      "format": "LP"
+    },{
+      "title": "Bad Girl",
+      "artist": "Reese McHenry and Spider Bags",
+      "releaseYear": 2017,
+      "format": "LP"
+    },{
+      "title": "Live 1975-85",
+      "artist": "Bruce Springsteen",
+      "releaseYear": 1986,
+      "format": "LP"
+    },{
+      "title": "The River",
+      "artist": "Bruce Springsteen",
+      "releaseYear": 1980,
+      "format": "LP"
+    },{
+      "title": "Nebraska",
+      "artist": "Bruce Springsteen",
+      "releaseYear": 1982,
+      "format": "LP"
+    },{
+      "title": "Tunnel Of Love",
+      "artist": "Bruce Springsteen",
+      "releaseYear": 1987,
+      "format": "LP"
+    },{
+      "title": "Greetings From Asbury Park, New Jersey",
+      "artist": "Bruce Springsteen",
+      "releaseYear": 1973,
+      "format": "LP"
+    },{
+      "title": "Born In The U.S.A.",
+      "artist": "Bruce Springsteen",
+      "releaseYear": 1984,
+      "format": "LP"
+    },{
+      "title": "The Wild, The Innocent & The E Street Shuffle",
+      "artist": "Bruce Springsteen",
+      "releaseYear": 1973,
+      "format": "LP"
+    },{
+      "title": "Darkness On The Edge Of Town",
+      "artist": "Bruce Springsteen",
+      "releaseYear": 1978,
+      "format": "LP"
+    },{
+      "title": "Born To Run",
+      "artist": "Bruce Springsteen",
+      "releaseYear": 1975,
+      "format": "LP"
+    },{
+      "title": "Argybargy",
+      "artist": "Squeeze",
+      "releaseYear": 1980,
+      "format": "LP"
+    },{
+      "title": "Fantasy Error",
+      "artist": "State Champion",
+      "releaseYear": 2015,
+      "format": "LP"
+    },{
+      "title": "The Stone Roses",
+      "artist": "The Stone Roses",
+      "releaseYear": 1989,
+      "format": "LP"
+    },{
+      "title": "Fun House",
+      "artist": "The Stooges",
+      "releaseYear": 1970,
+      "format": "LP"
+    },{
+      "title": "Life Is Splendid",
+      "artist": "Sun Ra",
+      "releaseYear": 1972,
+      "format": "LP"
+    },{
+      "title": "Jazz In Silhouette",
+      "artist": "Sun Ra",
+      "releaseYear": 1959,
+      "format": "LP"
+    },{
+      "title": "The Nubians Of Plutonia",
+      "artist": "Sun Ra",
+      "releaseYear": 1974,
+      "format": "LP"
+    },{
+      "title": "Batman And Robin",
+      "artist": "Sun Ra",
+      "releaseYear": 1966,
+      "format": "LP"
+    },{
+      "title": "Tossing Seeds",
+      "artist": "Superchunk",
+      "releaseYear": 1992,
+      "format": "LP"
+    },{
+      "title": "Here's Where The Strings Come In",
+      "artist": "Superchunk",
+      "releaseYear": 1995,
+      "format": "LP"
+    },{
+      "title": "No Pocky For Kitty",
+      "artist": "Superchunk",
+      "releaseYear": 1991,
+      "format": "LP"
+    },{
+      "title": "Speaking In Tongues",
+      "artist": "Talking Heads",
+      "releaseYear": 1983,
+      "format": "LP"
+    },{
+      "title": "Remain In Light",
+      "artist": "Talking Heads",
+      "releaseYear": 1980,
+      "format": "LP"
+    },{
+      "title": "Jailbreak",
+      "artist": "Thin Lizzy",
+      "releaseYear": 1976,
+      "format": "LP"
+    },{
+      "title": "Thin Lizzy",
+      "artist": "Thin Lizzy",
+      "releaseYear": 1971,
+      "format": "LP"
+    },{
+      "title": "The PowerOf Moonlight",
+      "artist": "Tiget Army",
+      "releaseYear": 2001,
+      "format": "LP"
+    },{
+      "title": "Tiger Army III: Ghost Tigers Rise",
+      "artist": "Tiger Army",
+      "releaseYear": 2004,
+      "format": "LP"
+    },{
+      "title": "A History Of Rats",
+      "artist": "This Is My Fist!",
+      "releaseYear": 2006,
+      "format": "LP"
+    },{
+      "title": "Life Of Abundance",
+      "artist": "Tin Armor",
+      "releaseYear": 2012,
+      "format": "LP"
+    },{
+      "title": "Torche",
+      "artist": "Torche",
+      "releaseYear": 2005,
+      "format": "LP"
+    },{
+      "title": "Meanderthal",
+      "artist": "Torche",
+      "releaseYear": 2008,
+      "format": "LP"
+    },{
+      "title": "Healer/Across The Shield",
+      "artist": "Torche",
+      "releaseYear": 2009,
+      "format": "LP"
+    },{
+      "title": "Midnight Marauders",
+      "artist": "A Tribe Called Quest",
+      "releaseYear": 1993,
+      "format": "LP"
+    },{
+      "title": "Putrifiers II",
+      "artist": "Thee Oh Sees",
+      "releaseYear": 2012,
+      "format": "LP"
+    },{
+      "title": "Chemistry Of Conciousness",
+      "artist": "Toxic Holocaust",
+      "releaseYear": 2013,
+      "format": "LP"
+    },{
+      "title": "UFO Rot",
+      "artist": "Tropical Trash",
+      "releaseYear": 2015,
+      "format": "LP"
+    },{
+      "title": "Tweens",
+      "artist": "Tweens",
+      "releaseYear": 2014,
+      "format": "LP"
+    },{
+      "title": "Our Gimmick Is Wrestling",
+      "artist": "The Ultimate Warriors",
+      "releaseYear": 2002,
+      "format": "LP"
+    },{
+      "title": "Flyin' Shoes",
+      "artist": "Townes Van Zandt",
+      "releaseYear": 1978,
+      "format": "LP"
+    },{
+      "title": "Live At The Old Quarter, Houston, Texas",
+      "artist": "Townes Van Zandt",
+      "releaseYear": 1977,
+      "format": "LP"
+    },{
+      "title": "Vol 1",
+      "artist": "Traveling Wilburies",
+      "releaseYear": 1988,
+      "format": "LP"
+    },{
+      "title": "Golden Greats",
+      "artist": "Ventures",
+      "releaseYear": 1967,
+      "format": "LP"
+    },{
+      "title": "b'lieve i'm goin down...",
+      "artist": "Kurt Vile",
+      "releaseYear": 2015,
+      "format": "LP"
+    },{
+      "title": "It's A Big World Out There (And I Am Scared)",
+      "artist": "Kurt Vile",
+      "releaseYear": 2013,
+      "format": "LP"
+    },{
+      "title": "Sessions 1981-83",
+      "artist": "Void",
+      "releaseYear": 2011,
+      "format": "LP"
+    },{
+      "title": "Warsaw",
+      "artist": "Warsaw",
+      "releaseYear": 2007,
+      "format": "LP"
+    },{
+      "title": "Green Album",
+      "artist": "Weezer",
+      "releaseYear": 2001,
+      "format": "LP"
+    },{
+      "title": "Fallow",
+      "artist": "Weakerthans",
+      "releaseYear": 1997,
+      "format": "LP"
+    },{
+      "title": "Start Something",
+      "artist": "What Happens Next?/Life's Halt!",
+      "releaseYear": 2001,
+      "format": "LP"
+    },{
+      "title": "White Reaper",
+      "artist": "White Reaper",
+      "releaseYear": 2014,
+      "format": "LP"
+    },{
+      "title": "Live At The Grand Ole Opre",
+      "artist": "Hank Williams",
+      "releaseYear": 1999,
+      "format": "LP"
+    },{
+      "title": "Greatest Hits",
+      "artist": "Hank Williams",
+      "releaseYear": 1973,
+      "format": "LP"
+    },{
+      "title": "I Just Wasnt Made For These Times",
+      "artist": "Brian Wilson",
+      "releaseYear": 1995,
+      "format": "LP"
+    },{
+      "title": "Enter The Wu-Tang (36th Chambers)",
+      "artist": "Wu-Tang Clan",
+      "releaseYear": 1993,
+      "format": "LP"
+    },{
+      "title": "Youth Of America",
+      "artist": "Wipers",
+      "releaseYear": 1981,
+      "format": "LP"
+    },{
+      "title": "Rarities",
+      "artist": "Wipers",
+      "releaseYear": 2016,
+      "format": "LP"
+    },{
+      "title": "Guitars, Cadillacs etc etc",
+      "artist": "Dwight Yoakam",
+      "releaseYear": 1986,
+      "format": "LP"
+    },{
+      "title": "Harvest",
+      "artist": "Neil Young",
+      "releaseYear": 1972,
+      "format": "LP"
+    },{
+      "title": "After The Gold Rush",
+      "artist": "Neil Young",
+      "releaseYear": 1970,
+      "format": "LP"
+    },{
+      "title": "On The Beach",
+      "artist": "Neil Young",
+      "releaseYear": 1974,
+      "format": "LP"
+    },{
+      "title": "Comes A Time",
+      "artist": "Neil Young",
+      "releaseYear": 1978,
+      "format": "LP"
+    },{
+      "title": "Neil Young",
+      "artist": "Neil Young",
+      "releaseYear": 1968,
+      "format": "LP"
+    },{
+      "title": "Zuma",
+      "artist": "Neil Young",
+      "releaseYear": 1975,
+      "format": "LP"
+    },{
+      "title": "Rust Never Sleeps",
+      "artist": "Neil Young",
+      "releaseYear": 1979,
+      "format": "LP"
+    },{
+      "title": "Everybody Knows This Is Nowhere",
+      "artist": "Neil Young",
+      "releaseYear": 1969,
+      "format": "LP"
+    },{
+      "title": "Live Rust",
+      "artist": "Neil Young",
+      "releaseYear": 1979,
+      "format": "LP"
+    },{
+      "title": "Broken Arrow",
+      "artist": "Neil Young",
+      "releaseYear": 1996,
+      "format": "LP"
+    },{
+      "title": "Trans",
+      "artist": "Neil Young",
+      "releaseYear": 1983,
+      "format": "LP"
+    },{
+      "title": "American Stars 'n Bars",
+      "artist": "Neil Young",
+      "releaseYear": 1977,
+      "format": "LP"
+    }
+]
