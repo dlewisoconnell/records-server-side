@@ -35,7 +35,7 @@ This project is a full-stack application that displays and analyzes Danny's reco
 
    The server will start listening on port 3000.
 
-4. Open your web browser and navigate to `http://localhost:3000` to access the record collection.
+4. Navigate to `index.html` to access the project's front-end.
 
 ### Project Structure
 
@@ -58,5 +58,3 @@ This project is a full-stack application that displays and analyzes Danny's reco
 - Records By Year: The chart shows the number of records released per year.
 
 - Most Frequent Artists: The table displays the artists with the highest number of records in the collection.
-
-Feel free to explore and customize the project as per your requirements.
