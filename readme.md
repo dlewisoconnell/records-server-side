@@ -1,4 +1,4 @@
-# Record Collection Management System (Server-Side Version)
+# Record Collection Management System (Server-Side)
 
 This project is a full-stack application that displays and analyzes Danny's record collection. It provides a user interface to browse through the records, view statistics, and see information about the collection.
 
