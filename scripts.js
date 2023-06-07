@@ -1,54 +1,53 @@
-
 fetch('http://localhost:3000/api/records')
-.then(response => response.json())
-.then(data => {
-  const totalRecords = document.getElementById('total-records');
-  const artistsBody = document.getElementById('artists-body');
+  .then(response => response.json())
+  .then(data => {
+    const totalRecords = document.getElementById('total-records');
+    const artistsBody = document.getElementById('artists-body');
 
-  function generateArtistTable() {
-    const artistsData = getArtistsWithMultipleRecords(data);
-    artistsBody.innerHTML = '';
+    function generateArtistTable() {
+      const artistsData = getArtistsWithMultipleRecords(data);
+      artistsBody.innerHTML = '';
 
-    artistsData.forEach(artist => {
-      const row = document.createElement('tr');
-      const artistCell = document.createElement('td');
-      const countCell = document.createElement('td');
+      artistsData.forEach(artist => {
+        const row = document.createElement('tr');
+        const artistCell = document.createElement('td');
+        const countCell = document.createElement('td');
 
-      artistCell.textContent = artist.name;
-      countCell.textContent = artist.count;
+        artistCell.textContent = artist.name;
+        countCell.textContent = artist.count;
 
-      row.appendChild(artistCell);
-      row.appendChild(countCell);
+        row.appendChild(artistCell);
+        row.appendChild(countCell);
 
-      artistsBody.appendChild(row);
-    });
-  }
+        artistsBody.appendChild(row);
+      });
+    }
 
-  function getArtistsWithMultipleRecords(records) {
-    const artistCounts = {};
+    function getArtistsWithMultipleRecords(records) {
+      const artistCounts = {};
 
-    records.forEach(record => {
-      const artist = record.artist;
+      records.forEach(record => {
+        const artist = record.artist;
 
-      if (artist in artistCounts) {
-        artistCounts[artist]++;
-      } else {
-        artistCounts[artist] = 1;
-      }
-    });
+        if (artist in artistCounts) {
+          artistCounts[artist]++;
+        } else {
+          artistCounts[artist] = 1;
+        }
+      });
 
-    const artistsData = Object.keys(artistCounts)
-      .filter(artist => artistCounts[artist] > 1)
-      .map(artist => ({ name: artist, count: artistCounts[artist] }));
+      const artistsData = Object.keys(artistCounts)
+        .filter(artist => artistCounts[artist] > 1)
+        .map(artist => ({ name: artist, count: artistCounts[artist] }));
 
-    artistsData.sort((a, b) => b.count - a.count);
+      artistsData.sort((a, b) => b.count - a.count);
 
-    return artistsData;
-  }
+      return artistsData;
+    }
 
-  totalRecords.textContent = `Total Records: ${data.length}`;
-  generateArtistTable();
-});
+    totalRecords.textContent = `Total Records: ${data.length}`;
+    generateArtistTable();
+  });
 
 fetch('http://localhost:3000/api/records')
   .then(response => response.json())
@@ -65,55 +64,145 @@ fetch('http://localhost:3000/api/records')
     let totalPages = Math.ceil(data.length / recordsPerPage);
     let currentColumn = 'artist';
     let currentSortOrder = 'asc';
-
     function showRecords(page) {
       recordsBody.innerHTML = '';
-
+    
       const sortedData = sortRecords(data, currentColumn, currentSortOrder);
       const startIndex = (page - 1) * recordsPerPage;
       const endIndex = startIndex + recordsPerPage;
       let recordsToShow = sortedData.slice(startIndex, endIndex);
-
+    
       recordsToShow.forEach(record => {
         const row = document.createElement('tr');
         const titleCell = document.createElement('td');
         const artistCell = document.createElement('td');
         const yearCell = document.createElement('td');
         const formatCell = document.createElement('td');
-
+    
         titleCell.textContent = record.title;
-        artistCell.textContent = record.artist;
         yearCell.textContent = record.releaseYear;
         formatCell.textContent = record.format;
-
+    
+        const artistLink = document.createElement('a');
+        const wikipediaLink = getWikipediaLink(record.artist);
+    
+        if (wikipediaLink) {
+          artistLink.href = wikipediaLink;
+          artistLink.textContent = record.artist;
+          artistLink.target = '_blank';
+        } else {
+          artistLink.textContent = record.artist;
+          artistLink.style.pointerEvents = 'none';
+          artistLink.style.color = '#000000';
+        }
+    
+        artistCell.appendChild(artistLink);
+    
         row.appendChild(titleCell);
         row.appendChild(artistCell);
         row.appendChild(yearCell);
         row.appendChild(formatCell);
-
+    
         recordsBody.appendChild(row);
       });
-
+    
       prevBtn.disabled = page === 1;
       nextBtn.disabled = page === totalPages;
-
+    
       if (page === 1) {
         prevBtn.style.display = 'none';
       } else {
         prevBtn.style.display = 'inline-block';
       }
-
+    
       if (page === totalPages) {
         nextBtn.style.display = 'none';
       } else {
         nextBtn.style.display = 'inline-block';
       }
-
+    
       // Update chart data
       const yearsData = getRecordsByYear(data);
       updateChart(yearsData);
     }
-
+    
+    function getWikipediaLink(artist) {
+      const linkExceptions = {
+        'AFI': 'AFI_(band)',
+        'Black Flag': 'Black Flag (band)',
+        'Ceremony': 'Ceremony (punk band)',
+        'Cream': 'Cream (band)',
+        'DRI': 'D.R.I. (band)',
+        'Death': 'Death (proto-punk band)',
+        'Endpoint': 'Endpoint (band)',
+        'Hickey': 'Hickey (band)',
+        'Minutemen': 'Minutemen (band)',
+        'Nirvana': 'Nirvana (band)',
+        'Pavement': 'Pavement (band)',
+        'Police': 'Police (band)',
+        'Pixies': 'Pixies (band)',
+        'Pretenders': 'Pretenders (band)',
+        'Shellac': 'Shellac (band)',
+        'The Men': 'The Men (punk band)',
+        'Sleep': 'Sleep (band)',
+        'Squeeze': 'Squeeze (band)',
+        'Torche': 'Torche (band)',
+        'Void': 'Void (band)',
+        'Wipers': 'Wipers (band)'
+      };
+    
+      const linkExceptionsBandcamp = [
+        'Anwar Sadat',
+        'Apache Dropout',
+        'Big Eyes',
+        'Black Cross',
+        'Coliseum',
+        'Destruction Unit',
+        'Elsinores',
+        'Good Shade',
+        'Hank Wood And The Hammerheads',
+        'Milk Music',
+        'Phasm',
+        'Sorespot',
+        'This Is My Fist',
+        'Tropical Trash',
+        'Tweens',
+        'Mystic 100s'
+      ];
+    
+      const noLinkArtists = [
+        'Blatz/Filth',
+        'Bugg',
+        'Milk Music/Destruction Unit/Merchandise',
+        'Midnight',
+        'Old Baby',
+        'Pampers',
+        'Sapat',
+        'Reese McHenry and Spider Bags',
+        'Shutaro Noguchi',
+        'State Champion',
+      ];
+    
+      if (noLinkArtists.includes(artist)) {
+        return '';
+      }
+    
+      if (linkExceptions.hasOwnProperty(artist)) {
+        return `https://en.wikipedia.org/wiki/${encodeURIComponent(linkExceptions[artist])}`;
+      }
+    
+      if (linkExceptionsBandcamp.includes(artist)) {
+        return `https://${convertToBandcampFormat(artist)}.bandcamp.com`;
+      }
+    
+      return `https://en.wikipedia.org/wiki/${encodeURIComponent(artist)}`;
+    }
+    
+    function convertToBandcampFormat(artist) {
+      return artist.replace(/ /g, '').toLowerCase();
+    }
+    
+        
     function sortRecords(records, column, sortOrder) {
       return records.sort((a, b) => {
         let aValue = a[column];
@@ -189,15 +278,18 @@ fetch('http://localhost:3000/api/records')
       const sortIndicator = sortOrder === 'asc' ? '▲' : '▼';
       header.textContent = `${header.textContent} ${sortIndicator}`;
     }
-
+    
     function resetSortIndicators() {
       titleHeader.textContent = 'Title';
       artistHeader.textContent = 'Artist';
       releaseYearHeader.textContent = 'Release Year';
       formatHeader.textContent = 'Format';
     }
-
+    
     showRecords(currentPage);
+    
+    // Call updateSortIndicator for each header to display the sort indicator initially
+    updateSortIndicator(artistHeader, currentSortOrder);
 
     prevBtn.addEventListener('click', () => {
       if (currentPage > 1) {
@@ -205,14 +297,14 @@ fetch('http://localhost:3000/api/records')
         showRecords(currentPage);
       }
     });
-
+    
     nextBtn.addEventListener('click', () => {
       if (currentPage < totalPages) {
         currentPage++;
         showRecords(currentPage);
       }
     });
-
+    
     titleHeader.addEventListener('click', () => {
       resetSortIndicators();
       if (currentColumn === 'title' && currentSortOrder === 'asc') {
@@ -226,7 +318,7 @@ fetch('http://localhost:3000/api/records')
       currentPage = 1;
       showRecords(currentPage);
     });
-
+    
     artistHeader.addEventListener('click', () => {
       resetSortIndicators();
       if (currentColumn === 'artist' && currentSortOrder === 'asc') {
@@ -240,7 +332,7 @@ fetch('http://localhost:3000/api/records')
       currentPage = 1;
       showRecords(currentPage);
     });
-
+    
     releaseYearHeader.addEventListener('click', () => {
       resetSortIndicators();
       if (currentColumn === 'releaseYear' && currentSortOrder === 'asc') {
@@ -254,7 +346,7 @@ fetch('http://localhost:3000/api/records')
       currentPage = 1;
       showRecords(currentPage);
     });
-
+    
     formatHeader.addEventListener('click', () => {
       resetSortIndicators();
       if (currentColumn === 'format' && currentSortOrder === 'asc') {
@@ -268,54 +360,5 @@ fetch('http://localhost:3000/api/records')
       currentPage = 1;
       showRecords(currentPage);
     });
+    
   });
-
-  fetch('http://localhost:3000/api/records')
-.then(response => response.json())
-.then(data => {
-const artistsBody = document.getElementById('artists-body');
-
-function generateArtistTable() {
-  const artistsData = getArtistsWithMultipleRecords(data);
-  artistsBody.innerHTML = '';
-
-  artistsData.forEach(artist => {
-    const row = document.createElement('tr');
-    const artistCell = document.createElement('td');
-    const countCell = document.createElement('td');
-
-    artistCell.textContent = artist.name;
-    countCell.textContent = artist.count;
-
-    row.appendChild(artistCell);
-    row.appendChild(countCell);
-
-    artistsBody.appendChild(row);
-  });
-}
-
-function getArtistsWithMultipleRecords(records) {
-  const artistCounts = {};
-
-  records.forEach(record => {
-    const artist = record.artist;
-
-    if (artist in artistCounts) {
-      artistCounts[artist]++;
-    } else {
-      artistCounts[artist] = 1;
-    }
-  });
-
-  const artistsData = Object.keys(artistCounts)
-    .filter(artist => artistCounts[artist] > 1)
-    .map(artist => ({ name: artist, count: artistCounts[artist] }));
-
-  artistsData.sort((a, b) => b.count - a.count);
-
-  return artistsData;
-}
-
-generateArtistTable();
-});
-

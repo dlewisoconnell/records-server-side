@@ -331,12 +331,12 @@
     "format": "LP"
   },{
     "title": "New Forms",
-    "artist": "Elsinores",
+    "artist": "The Elsinores",
     "releaseYear": 2015,
     "format": "LP"
   },{
     "title": "Dreams of Youth",
-    "artist": "Elsinores",
+    "artist": "The Elsinores",
     "releaseYear": 2014,
     "format": "LP"
   },{
@@ -410,8 +410,8 @@
       "releaseYear": 1984,
       "format": "LP"
     },{
-      "title": "Grateful Dead",
-      "artist": "Live/Dead",
+      "title": "Live/Dead",
+      "artist": "Grateful Dead",
       "releaseYear": 1969,
       "format": "LP"
     },{
@@ -506,7 +506,7 @@
       "format": "LP"
     },{
       "title": "Zone",
-      "artist": "Jeff The Brotherhood",
+      "artist": "JEFF The Brotherhood",
       "releaseYear": 2016,
       "format": "LP"
     },{
@@ -531,7 +531,7 @@
       "format": "LP"
     },{
       "title": "King Missile",
-      "artist": "King Millile",
+      "artist": "King Missile",
       "releaseYear": 1994,
       "format": "LP"
     },{
@@ -795,8 +795,8 @@
       "releaseYear": 1990,
       "format": "LP"
     },{
-      "title": "Pixies",
-      "artist": "Trompe Le Monde",
+      "title": "Trompe Le Monde",
+      "artist": "Pixies",
       "releaseYear": 1991,
       "format": "LP"
     },{
@@ -1176,7 +1176,7 @@
       "format": "LP"
     },{
       "title": "The PowerOf Moonlight",
-      "artist": "Tiget Army",
+      "artist": "Tiger Army",
       "releaseYear": 2001,
       "format": "LP"
     },{
@@ -1186,7 +1186,7 @@
       "format": "LP"
     },{
       "title": "A History Of Rats",
-      "artist": "This Is My Fist!",
+      "artist": "This Is My Fist",
       "releaseYear": 2006,
       "format": "LP"
     },{
@@ -1251,7 +1251,7 @@
       "format": "LP"
     },{
       "title": "Vol 1",
-      "artist": "Traveling Wilburies",
+      "artist": "Traveling Wilburys",
       "releaseYear": 1988,
       "format": "LP"
     },{
@@ -1392,6 +1392,11 @@
     },{
       "title": "American Stars 'n Bars",
       "artist": "Neil Young",
+      "releaseYear": 1977,
+      "format": "LP"
+    },{
+      "title": "On A Micro Diet",
+      "artist": "Mystic 100s",
       "releaseYear": 1977,
       "format": "LP"
     }
