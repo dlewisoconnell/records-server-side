@@ -1,28 +1,48 @@
+const linkExceptionsBandcamp = [
+  'Anwar Sadat',
+  'Apache Dropout',
+  'Big Eyes',
+  'Black Cross',
+  'Coliseum',
+  'Destruction Unit',
+  'Elsinores',
+  'Good Shade',
+  'Hank Wood And The Hammerheads',
+  'Milk Music',
+  'Phasm',
+  'Sorespot',
+  'This Is My Fist',
+  'Tropical Trash',
+  'Tweens',
+  'Mystic 100s'
+];
+
 fetch('http://localhost:3000/api/records')
   .then(response => response.json())
   .then(data => {
     const totalRecords = document.getElementById('total-records');
     const artistsBody = document.getElementById('artists-body');
-
     function generateArtistTable() {
       const artistsData = getArtistsWithMultipleRecords(data);
       artistsBody.innerHTML = '';
-
-      artistsData.forEach(artist => {
+    
+      const top10Artists = artistsData.slice(0, 10); // Retrieve only the top 10 artists
+    
+      top10Artists.forEach(artist => {
         const row = document.createElement('tr');
         const artistCell = document.createElement('td');
         const countCell = document.createElement('td');
-
+    
         artistCell.textContent = artist.name;
         countCell.textContent = artist.count;
-
+    
         row.appendChild(artistCell);
         row.appendChild(countCell);
-
+    
         artistsBody.appendChild(row);
       });
     }
-
+    
     function getArtistsWithMultipleRecords(records) {
       const artistCounts = {};
 
@@ -64,45 +84,58 @@ fetch('http://localhost:3000/api/records')
     let totalPages = Math.ceil(data.length / recordsPerPage);
     let currentColumn = 'artist';
     let currentSortOrder = 'asc';
+    
     function showRecords(page) {
       recordsBody.innerHTML = '';
-    
+
       const sortedData = sortRecords(data, currentColumn, currentSortOrder);
       const startIndex = (page - 1) * recordsPerPage;
       const endIndex = startIndex + recordsPerPage;
       let recordsToShow = sortedData.slice(startIndex, endIndex);
-    
+
       recordsToShow.forEach(record => {
         const row = document.createElement('tr');
         const titleCell = document.createElement('td');
         const artistCell = document.createElement('td');
         const yearCell = document.createElement('td');
         const formatCell = document.createElement('td');
-    
-        titleCell.textContent = record.title;
+
+        const titleLink = document.createElement('a');
+        titleLink.textContent = record.title;
+        titleLink.href = `https://www.youtube.com/results?search_query=${encodeURIComponent(record.title + ' ' + record.artist)}`;
+        titleLink.target = '_blank';
+        titleLink.title = `Listen to the ${record.title} album on YouTube`;
+        titleCell.appendChild(titleLink);
+
         yearCell.textContent = record.releaseYear;
         formatCell.textContent = record.format;
-    
+
         const artistLink = document.createElement('a');
         const wikipediaLink = getWikipediaLink(record.artist);
-    
-        if (wikipediaLink) {
+        if (linkExceptionsBandcamp.includes(record.artist)) {
+          artistLink.textContent = record.artist;
+          artistLink.href = `https://${convertToBandcampFormat(record.artist)}.bandcamp.com`;
+          artistLink.target = '_blank';
+          artistLink.title = `Check out ${record.artist} on Bandcamp`;
+        } else if (wikipediaLink) {
           artistLink.href = wikipediaLink;
           artistLink.textContent = record.artist;
           artistLink.target = '_blank';
-        } else {
+          artistLink.title = `Read about ${record.artist} on Wikipedia`;
+        }  else {
           artistLink.textContent = record.artist;
           artistLink.style.pointerEvents = 'none';
           artistLink.style.color = '#000000';
         }
     
+
         artistCell.appendChild(artistLink);
-    
+
         row.appendChild(titleCell);
         row.appendChild(artistCell);
         row.appendChild(yearCell);
         row.appendChild(formatCell);
-    
+
         recordsBody.appendChild(row);
       });
     
@@ -125,6 +158,8 @@ fetch('http://localhost:3000/api/records')
       const yearsData = getRecordsByYear(data);
       updateChart(yearsData);
     }
+    
+
     
     function getWikipediaLink(artist) {
       const linkExceptions = {
@@ -151,25 +186,6 @@ fetch('http://localhost:3000/api/records')
         'Wipers': 'Wipers (band)'
       };
     
-      const linkExceptionsBandcamp = [
-        'Anwar Sadat',
-        'Apache Dropout',
-        'Big Eyes',
-        'Black Cross',
-        'Coliseum',
-        'Destruction Unit',
-        'Elsinores',
-        'Good Shade',
-        'Hank Wood And The Hammerheads',
-        'Milk Music',
-        'Phasm',
-        'Sorespot',
-        'This Is My Fist',
-        'Tropical Trash',
-        'Tweens',
-        'Mystic 100s'
-      ];
-    
       const noLinkArtists = [
         'Blatz/Filth',
         'Bugg',
@@ -182,21 +198,22 @@ fetch('http://localhost:3000/api/records')
         'Shutaro Noguchi',
         'State Champion',
       ];
-    
+
       if (noLinkArtists.includes(artist)) {
         return '';
-      }
-    
-      if (linkExceptions.hasOwnProperty(artist)) {
-        return `https://en.wikipedia.org/wiki/${encodeURIComponent(linkExceptions[artist])}`;
       }
     
       if (linkExceptionsBandcamp.includes(artist)) {
         return `https://${convertToBandcampFormat(artist)}.bandcamp.com`;
       }
     
+      if (linkExceptions.hasOwnProperty(artist)) {
+        return `https://en.wikipedia.org/wiki/${encodeURIComponent(linkExceptions[artist])}`;
+      }
+    
       return `https://en.wikipedia.org/wiki/${encodeURIComponent(artist)}`;
     }
+    
     
     function convertToBandcampFormat(artist) {
       return artist.replace(/ /g, '').toLowerCase();
@@ -272,6 +289,7 @@ fetch('http://localhost:3000/api/records')
           }
         }
       });
+      
     }
 
     function updateSortIndicator(header, sortOrder) {
