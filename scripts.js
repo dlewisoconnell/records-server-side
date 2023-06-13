@@ -1,32 +1,15 @@
-const linkExceptionsBandcamp = [
-  'Anwar Sadat',
-  'Apache Dropout',
-  'Big Eyes',
-  'Black Cross',
-  'Coliseum',
-  'Destruction Unit',
-  'Elsinores',
-  'Good Shade',
-  'Hank Wood And The Hammerheads',
-  'Milk Music',
-  'Phasm',
-  'Sorespot',
-  'This Is My Fist',
-  'Tropical Trash',
-  'Tweens',
-  'Mystic 100s'
-];
-
 fetch('http://localhost:3000/api/records')
   .then(response => response.json())
   .then(data => {
+    recordsData = data;
     const totalRecords = document.getElementById('total-records');
     const artistsBody = document.getElementById('artists-body');
+    
     function generateArtistTable() {
       const artistsData = getArtistsWithMultipleRecords(data);
       artistsBody.innerHTML = '';
     
-      const top10Artists = artistsData.slice(0, 10); // Retrieve only the top 10 artists
+      const top10Artists = artistsData.slice(0, 10);
     
       top10Artists.forEach(artist => {
         const row = document.createElement('tr');
@@ -43,6 +26,7 @@ fetch('http://localhost:3000/api/records')
       });
     }
     
+  
     function getArtistsWithMultipleRecords(records) {
       const artistCounts = {};
 
@@ -69,12 +53,34 @@ fetch('http://localhost:3000/api/records')
     generateArtistTable();
   });
 
+  const linkExceptionsBandcamp = [
+    'Anwar Sadat',
+    'Apache Dropout',
+    'Big Eyes',
+    'Black Cross',
+    'Coliseum',
+    'Destruction Unit',
+    'Elsinores',
+    'Good Shade',
+    'Hank Wood And The Hammerheads',
+    'Milk Music',
+    'Phasm',
+    'Sorespot',
+    'This Is My Fist',
+    'Tropical Trash',
+    'Tweens',
+    'Mystic 100s'
+  ];
+  
+  
 fetch('http://localhost:3000/api/records')
   .then(response => response.json())
   .then(data => {
     const recordsBody = document.getElementById('records-body');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
+    const firstBtn = document.getElementById('firstBtn'); // Add first button element
+    const lastBtn = document.getElementById('lastBtn'); // Add last button element
     const titleHeader = document.getElementById('title-header');
     const artistHeader = document.getElementById('artist-header');
     const releaseYearHeader = document.getElementById('release-year-header');
@@ -261,36 +267,9 @@ fetch('http://localhost:3000/api/records')
       return yearsData;
     }
 
-    function updateChart(yearsData) {
-      const chartCanvas = document.getElementById('myChart');
-      const years = Object.keys(yearsData);
-      const counts = Object.values(yearsData);
 
-      const ctx = chartCanvas.getContext('2d');
-      const chart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: years,
-          datasets: [{
-            label: 'Records Released per Year',
-            data: counts,
-            backgroundColor: 'rgba(75, 192, 192, 0.6)',
-            borderColor: 'rgba(75, 192, 192, 1)',
-            borderWidth: 1
-          }]
-        },
-        options: {
-          scales: {
-            y: {
-              beginAtZero: true,
-              precision: 0,
-              stepSize: 1
-            }
-          }
-        }
-      });
-      
-    }
+    
+    
 
     function updateSortIndicator(header, sortOrder) {
       const sortIndicator = sortOrder === 'asc' ? '▲' : '▼';
@@ -306,7 +285,6 @@ fetch('http://localhost:3000/api/records')
     
     showRecords(currentPage);
     
-    // Call updateSortIndicator for each header to display the sort indicator initially
     updateSortIndicator(artistHeader, currentSortOrder);
 
     prevBtn.addEventListener('click', () => {
@@ -380,3 +358,56 @@ fetch('http://localhost:3000/api/records')
     });
     
   });
+
+
+  function updateChart(yearsData) {
+    const chartCanvas = document.getElementById('myChart');
+    const years = Object.keys(yearsData);
+    const counts = Object.values(yearsData);
+  
+    const ctx = chartCanvas.getContext('2d');
+    const chart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: years,
+        datasets: [{
+          label: 'Records Released per Year',
+          data: counts,
+          backgroundColor: 'rgba(75, 192, 192, 0.6)',
+          borderColor: 'rgba(75, 192, 192, 1)',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            precision: 0,
+            stepSize: 1
+          }
+        },
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: (context) => {
+                const index = context.dataIndex;
+                const year = context.label;
+                const count = context.parsed.y;
+  
+                const records = recordsData.filter(record => record.releaseYear === year);
+                recordDetails = records.map(record => `${record.artist} - ${record.title}`).join('\n');
+              
+                let label = `Records: ${count}`;
+                if (recordDetails) {
+                  label += `\n\n${recordDetails}`;
+                }
+  
+                return label;
+              }
+            }
+          }
+        }
+      }
+    });
+  }
+  
